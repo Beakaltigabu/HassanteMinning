@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hassante Mining Cooperative - Leading mineral mining company in Ethiopia Somalia Region specializing in Iron ore, Lithium, Gold, Copper, Amethyst, and Chromite mining since 2014.">
+    <meta name="keywords" content="mining ethiopia, dawa zone mining, hassante mining, iron ore, lithium mining, gold mining, copper mining">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="About Us | Hassante Mining Cooperative">
+    <meta property="og:description" content="Leading mineral mining company in Ethiopia Somalia Region with 10 years of excellence in sustainable mining practices.">
+    <meta property="og:image" content="assets/images/logo.jpg">
+    <title>About Us | Hassante Mining Cooperative | Professional Mining Services</title>
+
+    <style>/* Critical CSS for about.html */
+        :root {
+            --header-height: 70px;
+            --section-padding: 60px;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --h1-size: clamp(2rem, 4vw, 3rem);
+            --h2-size: clamp(1.8rem, 3vw, 2.5rem);
+            --light: #f8f9fa;
+            --accent: #e67e22;
+            --radius-lg: 12px;
+            --transition-normal: 300ms ease;
+        }
+
+        /* Critical Hero Section */
+        .hero-section {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 73, 94, 0.9)),
+                        url('../assets/images/moyale.jpg') center/cover;
+            padding: var(--header-height) 0 var(--section-padding);
+            color: var(--light);
+            margin-top: var(--header-height);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 var(--space-md);
+        }
+
+        .hero-content h1 {
+            font-size: var(--h1-size);
+            margin-bottom: var(--space-md);
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-xl);
+            margin-top: var(--space-xl);
+            animation: fadeIn 1.5s ease;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            transition: transform var(--transition-normal);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: var(--h2-size);
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: var(--space-sm);
+        }
+
+        /* Critical Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Critical Mobile Styles */
+        @media (max-width: 768px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+        }
+        </style>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="css/global.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/contact.css" as="style">
+    <link rel="preload" href="js/contact.js" as="script">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <a href="index.html" class="logo-text">
+                    <span class="primary-text">Hassante</span>
+                    <span class="secondary-text">Mining Cooperative</span>
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content container">
+                <h1>Leading Mining Excellence</h1>
+                <p>Pioneering sustainable mineral extraction in Ethiopia's Dawa Zone since 2014</p>
+                <div class="hero-stats">
+                    <div class="stat-item" data-target="10">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item" data-target="30">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Expert Members</span>
+                    </div>
+                    <div class="stat-item" data-target="6">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Mineral Types</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-overview">
+            <div class="container">
+                <h2 class="section-title">Our Story</h2>
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>Since our establishment in 2014, Hassante Mining Cooperative has become a cornerstone of Ethiopia's mining sector. Our commitment to excellence and sustainable practices drives our success in premium mineral extraction.</p>
+                        <div class="mineral-tags">
+                            <span>Iron Ore</span>
+                            <span>Lithium</span>
+                            <span>Gold</span>
+                            <span>Copper</span>
+                            <span>Amethyst</span>
+                            <span>Chromite</span>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="assets/images/moyale.jpg" alt="Mining operations at Hassante" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="operations-showcase">
+            <div class="container">
+                <h2 class="section-title">Core Mining Operations</h2>
+                <div class="operations-grid">
+                    <div class="operation-card" data-animate="fade-up">
+                        <div class="card-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Extraction</h3>
+                            <p>Advanced mining techniques for efficient mineral extraction from Ethiopia's rich deposits</p>
+                        </div>
+                    </div>
+                    <div class="operation-card" data-animate="fade-up">
+                        <div class="card-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Processing</h3>
+                            <p>State-of-the-art processing methods ensuring premium mineral quality</p>
+                        </div>
+                    </div>
+                    <div class="operation-card" data-animate="fade-up">
+                        <div class="card-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Distribution</h3>
+                            <p>Efficient logistics network for reliable mineral distribution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <div class="container">
+                <h2 class="section-title">Our Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card" data-animate="fade-up">
+                        <div class="achievement-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>Recognized for delivering high-grade minerals</p>
+                    </div>
+                    <div class="achievement-card" data-animate="fade-up">
+                        <div class="achievement-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Strong Partnerships</h3>
+                        <p>Trusted by leading industry partners</p>
+                    </div>
+                    <div class="achievement-card" data-animate="fade-up">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Expert Team</h3>
+                        <p>30 skilled mining professionals</p>
+                    </div>
+                    <div class="achievement-card" data-animate="fade-up">
+                        <div class="achievement-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Consistent Growth</h3>
+                        <p>Decade of successful operations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Hassante Mining</h3>
+                    <p>Professional mining cooperative with 10 years of excellence in mineral extraction and processing.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-minerals">
+                    <h4>Our Minerals</h4>
+                    <ul class="footer-list">
+                        <li>Iron Ore</li>
+                        <li>Lithium</li>
+                        <li>Gold</li>
+                        <li>Copper</li>
+                        <li>Amethyst</li>
+                        <li>Chromite</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-list">
+                        <li><i class="fas fa-phone"></i> +251 911 531 220</li>
+                        <li><i class="fas fa-phone"></i> +251 926 823 814</li>
+                        <li><i class="fas fa-envelope"></i> dikahanu310@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dawa Zone, Ethiopia Somalia Region</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Hassante Mining Cooperative. All rights reserved.</p>
+        </div>
+        <div class="footer-signature">
+            <p>Powered by <span class="digital-amba">DigitalAmba</span></p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="js/about.js"></script>
+</body>
+</html>

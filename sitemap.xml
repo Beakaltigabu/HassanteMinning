@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://hassante.com/</loc>
+        <priority>1.0</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- About Page -->
+    <url>
+        <loc>https://hassante.com/about.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Gallery Page -->
+    <url>
+        <loc>https://hassante.com/gallery.html</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <!-- Contact Page -->
+    <url>
+        <loc>https://hassante.com/contact.html</loc>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Mineral Categories -->
+    <url>
+        <loc>https://hassante.com/gallery.html#iron</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://hassante.com/gallery.html#lithium</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://hassante.com/gallery.html#gold</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://hassante.com/gallery.html#copper</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://hassante.com/gallery.html#amethyst</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://hassante.com/gallery.html#chromite</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+</urlset>

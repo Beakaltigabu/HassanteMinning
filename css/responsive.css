@@ -1,0 +1,133 @@
+/* Modern Fluid Breakpoints */
+:root {
+  --breakpoint-sm: 30em;   /* 480px */
+  --breakpoint-md: 48em;   /* 768px */
+  --breakpoint-lg: 64em;   /* 1024px */
+  --breakpoint-xl: 80em;   /* 1280px */
+}
+
+/* Fluid Typography */
+@media screen and (min-width: 320px) {
+  :root {
+      --fluid-min-width: 320;
+      --fluid-max-width: 1200;
+      --fluid-screen: 100vw;
+      --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)));
+  }
+
+  :root {
+      --fluid-h1: calc(2rem + (3.5 - 2) * var(--fluid-bp));
+      --fluid-h2: calc(1.5rem + (2.5 - 1.5) * var(--fluid-bp));
+      --fluid-h3: calc(1.25rem + (1.75 - 1.25) * var(--fluid-bp));
+      --fluid-body: calc(1rem + (1.125 - 1) * var(--fluid-bp));
+  }
+}
+
+/* Layout & Grid */
+@media (max-width: var(--breakpoint-xl)) {
+  .container {
+      width: 90%;
+      max-width: 1200px;
+  }
+}
+
+@media (max-width: var(--breakpoint-lg)) {
+  .minerals-grid,
+  .experience-container,
+  .location-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: var(--breakpoint-md)) {
+  .header {
+      height: 60px;
+  }
+
+  .nav-links {
+      position: fixed;
+      top: 60px;
+      right: -100%;
+      bottom: 0;
+      width: 70%;
+      background: var(--color-light);
+      flex-direction: column;
+      padding: var(--space-lg);
+      transition: right var(--transition-normal);
+  }
+
+  .nav-links.active {
+      right: 0;
+      box-shadow: var(--shadow-lg);
+  }
+
+  .mobile-menu {
+      display: block;
+  }
+
+  .hero-features {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .minerals-grid,
+  .experience-container,
+  .location-container {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .hero-features {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .btn {
+      width: 100%;
+      margin: var(--space-xs) 0;
+  }
+
+  .stats-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .hero-cta,
+  .mobile-menu {
+      display: none;
+  }
+
+  body {
+      color: black;
+      background: white;
+  }
+
+  .container {
+      width: 100%;
+      max-width: none;
+      padding: 0;
+      margin: 0;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+  }
+}

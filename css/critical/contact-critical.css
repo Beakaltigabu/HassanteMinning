@@ -1,0 +1,72 @@
+/* Critical CSS for contact.html */
+:root {
+    --header-height: 70px;
+    --section-padding: 60px;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --light: #f8f9fa;
+    --radius-lg: 12px;
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+    --transition-normal: 300ms ease;
+}
+
+/* Critical Hero Section */
+.contact-hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 73, 94, 0.9)),
+                url('../assets/images/moyale.jpg') center/cover;
+    padding: var(--header-height) 0 var(--section-padding);
+    color: var(--light);
+    margin-top: var(--header-height);
+    position: relative;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(44,62,80,0.8), rgba(52,152,219,0.8));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 var(--space-md);
+}
+
+/* Critical Contact Section */
+.contact-section {
+    padding: var(--space-xl) 0;
+    background: var(--light);
+}
+
+.contact-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: var(--space-lg);
+    padding: 0 var(--space-md);
+}
+
+/* Critical Form Styles */
+.contact-form-container {
+    background: white;
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* Critical Mobile Styles */
+@media screen and (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
